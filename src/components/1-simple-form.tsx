@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import simulatedApi from "../api/api";
-import { FormData } from "../types";
+import simulatedApi from "../api/api.ts";
+import type { FormData } from "../types";
 
 const SimpleForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
